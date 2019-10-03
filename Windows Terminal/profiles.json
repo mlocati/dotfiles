@@ -1,0 +1,92 @@
+// Path: %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\profiles.json
+// See https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md
+
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+
+  // When set to true, tabs are always displayed.
+  // When set to false and showTabsInTitlebar is set to false, tabs only appear after typing Ctrl + T.
+  // Default: true
+  //"alwaysShowTabs": true,
+
+  // When set to true, a selection is immediately copied to your clipboard upon creation.
+  // When set to false, the selection persists and awaits further action.
+  // Default: false
+  //"copyOnSelect": false,
+
+  // Sets the default profile.
+  // Opens by typing Ctrl + T or by clicking the '+' icon.
+  // The guid of the desired default profile is used as the value.
+  //"defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+
+  // The number of columns displayed in the window upon first load.
+  // Default: 120
+  //"initialCols": 120,
+
+  // The number of rows displayed in the window upon first load.
+  // Default: 30
+  //"initialRows": 30,
+
+  // Sets the theme of the application.
+  // Possible values: "light", "dark", "system"
+  // Default: "system"
+  //"requestedTheme": "system",
+
+  // When set to true, titlebar displays the title of the selected tab.
+  // When set to false, titlebar displays "Windows Terminal".
+  // Default: true
+  //"showTerminalTitleInTitlebar": true,
+
+  // When set to true, the tabs are moved into the titlebar and the titlebar disappears.
+  // When set to false, the titlebar sits above the tabs.
+  // Default: true
+  //"showTabsInTitlebar": true,
+
+  // Determines the delimiters used in a double click selection.
+  // wordDelimiters: "",
+
+  "profiles": [
+    {
+      "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+      "name": "PowerShell",
+      "commandline": "powershell.exe",
+      "hidden": false,
+      "useAcrylic": false
+    },
+    {
+      "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+      "name": "cmd",
+      "commandline": "cmd.exe",
+      "hidden": false,
+      "useAcrylic": false
+    },
+    {
+      "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+      "hidden": false,
+      "name": "Ubuntu-18.04",
+      "source": "Windows.Terminal.Wsl",
+      "useAcrylic": false
+    },
+    {
+      "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+      "hidden": true,
+      "name": "Azure Cloud Shell",
+      "source": "Windows.Terminal.Azure",
+      "useAcrylic": false
+    }
+  ],
+
+  // Add custom color schemes to this array
+  "schemes": [],
+
+  // Add any keybinding overrides to this array.
+  // To unbind a default keybinding, set the command to "unbound"
+  "keybindings": [
+    {
+      "command": "closeTab",
+      "keys": [
+        "ctrl+d"
+      ]
+    }
+  ]
+}

@@ -7,6 +7,3 @@
 
 # Make PowerShell downloading files much faster
 $global:ProgressPreference='SilentlyContinue'
-
-# `Ctrl`+`D` key combination to close the currently open PowerShell terminal (like Linux)
-Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
